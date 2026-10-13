@@ -2,7 +2,7 @@
 pymupdf>=1.24            # tested with 1.28.2
 numpy<3                  # tested with 1.26.4
 soundfile>=0.12          # WAV writing for Kokoro chunks
-# audio encode/concat shells out to the ffmpeg/ffprobe binaries (see docs/INSTALL.md)
+ffmpeg-python>=0.2.0     # optional helper; the real requirement is ffmpeg + ffprobe on PATH
 
 # ---- Neural TTS backend (optional; the 'mock' engine needs none of this) ----
 # Install with:  pip install torch kokoro
