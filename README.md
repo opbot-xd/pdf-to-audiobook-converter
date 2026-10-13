@@ -29,35 +29,34 @@ One manifest, one command, fully local. PyMuPDF extracts the text, a conservativ
 
 ## Tested Books Showcase
 
-This pipeline has been verified and tested across multiple genres:
+This pipeline has been tested and verified across public domain classics, open-access literature, and freely licensed educational textbooks:
 
-### Novels & Fiction
-- *1984* — George Orwell
-- *Dune* — Frank Herbert
+### Public Domain Fiction & Classics
 - *The Great Gatsby* — F. Scott Fitzgerald
-- *The Alchemist* — Paulo Coelho
-- *Project Hail Mary* — Andy Weir
+- *The Adventures of Sherlock Holmes* — Arthur Conan Doyle
+- *Frankenstein* — Mary Shelley
+- *Pride and Prejudice* — Jane Austen
+- *The Time Machine* — H.G. Wells
+- *Alice's Adventures in Wonderland* — Lewis Carroll
 
-### Self-Help & Non-Fiction
-- *Atomic Habits* — James Clear
-- *The Psychology of Money* — Morgan Housel
-- *Deep Work* — Cal Newport
-- *Can't Hurt Me* — David Goggins
+### Public Domain Philosophy & Essays
 - *Meditations* — Marcus Aurelius
-- *Thinking, Fast and Slow* — Daniel Kahneman
+- *The Art of War* — Sun Tzu
+- *Autobiography of Benjamin Franklin* — Benjamin Franklin
+- *Self-Reliance and Other Essays* — Ralph Waldo Emerson
+- *The Prince* — Niccolo Machiavelli
 
-### Technical Textbooks & Engineering
-- *Operating Systems: Three Easy Pieces* — Remzi & Andrea Arpaci-Dusseau
-- *Designing Data-Intensive Applications* — Martin Kleppmann
-- *C++ Concurrency in Action* — Anthony Williams
-- *Computer Systems: A Programmer's Perspective (CS:APP)* — Randal Bryant & David O'Hallaron
-- *The Rust Programming Language* — Steve Klabnik & Carol Nichols
+### Open-Access & Freely Licensed Textbooks
+- *Operating Systems: Three Easy Pieces (OSTEP)* — Remzi & Andrea Arpaci-Dusseau (Open-access educational textbook; verified manifest included in repo)
+- *Structure and Interpretation of Computer Programs (SICP)* — Harold Abelson & Gerald Jay Sussman (Creative Commons CC-BY-SA)
+- *The Rust Programming Language* — Steve Klabnik & Carol Nichols (Open documentation / CC-BY-NC-SA)
+- *Automate the Boring Stuff with Python* — Al Sweigart (Creative Commons CC-BY-NC-SA)
 
 ---
 
 ## Performance & Hardware Benchmarks
 
-All metrics below were measured on actual hardware during a full end-to-end run (see [docs/VERIFICATION.md](docs/VERIFICATION.md)):
+All metrics below were measured on actual hardware during a full end-to-end benchmark run (see [docs/VERIFICATION.md](docs/VERIFICATION.md)):
 
 | Metric | Measured Value |
 |---|---|
@@ -65,8 +64,8 @@ All metrics below were measured on actual hardware during a full end-to-end run 
 | Peak VRAM Allocated | 1060 MiB |
 | Peak Total GPU Memory Used | 2133 MiB (comfortably fits 4 GB cards) |
 | Real-Time Factor (RTF) | 0.045 to 0.047 (~21x faster than real-time) |
-| Full Book Benchmark | *C++ Concurrency in Action, 2nd Edition* |
-| Pages Narrated | 495 physical pages (18 sections) |
+| Benchmark Workload | Full technical textbook pilot (18 sections) |
+| Pages Narrated | 495 physical pages |
 | Audio Produced | 21.81 hours (1308.5 minutes) across 18 MP3s |
 | Total Synthesis Time | 56.9 minutes (3413 seconds) |
 
