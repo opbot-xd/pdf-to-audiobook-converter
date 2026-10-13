@@ -4,4 +4,11 @@ __pycache__/
 .pytest_cache/
 output/
 *.egg-info/
+
+# PDF books are large binaries and usually not part of the repo.
 *.pdf
+
+# Exception: the current manifest is kept so the repo has a real, parseable
+# manifest example. The referenced source PDF is intentionally NOT committed.
+!manifest.json
+!docs/pronunciation.example.json
