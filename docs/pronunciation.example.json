@@ -1,0 +1,8 @@
+{
+  "_comment": "Optional pronunciation rules. Point settings.pronunciation_file at a file like this.",
+  "rules": [
+    { "pattern": "Kokoro", "replacement": "koh-koh-roh", "regex": false },
+    { "pattern": "\\bGPU\\b", "replacement": "G P U", "regex": true },
+    { "pattern": "\\bAPI\\b", "replacement": "A P I", "regex": true }
+  ]
+}

@@ -1,0 +1,13 @@
+# ---- Core pipeline (needed for extraction, cleanup, audio) ----
+pymupdf>=1.24            # tested with 1.28.2
+numpy<3                  # tested with 1.26.4
+soundfile>=0.12          # WAV writing for Kokoro chunks
+# audio encode/concat shells out to the ffmpeg/ffprobe binaries (see docs/INSTALL.md)
+
+# ---- Neural TTS backend (optional; the 'mock' engine needs none of this) ----
+# Install with:  pip install torch kokoro
+torch>=2.1               # tested with 2.14.1+cu130 on an RTX 2050 (4 GB)
+kokoro>=0.9.4            # tested with 0.9.4 (hexgrad/Kokoro-82M, Apache-2.0)
+
+# ---- Tests ----
+pytest>=7.4              # tested with 9.1.1
