@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdf-audiobook-generator"
+version = "0.1.0"
+description = "Deterministic local PDF-to-audiobook pipeline using Kokoro-82M, PyMuPDF, and FFmpeg."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "PDF Audiobook Generator Contributors" }
+]
+keywords = [
+    "audiobook",
+    "tts",
+    "pdf",
+    "kokoro",
+    "speech-synthesis",
+    "ffmpeg",
+    "local-ai"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+    "Topic :: Text Processing :: General"
+]
+dependencies = [
+    "pymupdf>=1.24",
+    "numpy<3",
+    "soundfile>=0.12",
+    "ffmpeg-python>=0.2.0"
+]
+
+[project.optional-dependencies]
+tts = [
+    "torch>=2.1",
+    "kokoro>=0.9.4"
+]
+dev = [
+    "pytest>=7.4"
+]
+
+[project.scripts]
+audiobook = "audiobook:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-q --tb=short"
