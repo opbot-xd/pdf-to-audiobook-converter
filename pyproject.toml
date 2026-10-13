@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pdf-audiobook-generator"
+name = "pdf-to-audiobook-converter"
 version = "0.1.0"
 description = "Deterministic local PDF-to-audiobook pipeline using Kokoro-82M, PyMuPDF, and FFmpeg."
 readme = "README.md"

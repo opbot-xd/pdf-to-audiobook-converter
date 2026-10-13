@@ -83,8 +83,8 @@ All metrics below were measured on actual hardware during a full end-to-end benc
 ### 2. Installation
 
 ```bash
-git clone https://github.com/your-username/audiobook-generator.git
-cd audiobook-generator
+git clone https://github.com/opbot-xd/pdf-to-audiobook-converter.git
+cd pdf-to-audiobook-converter
 
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
